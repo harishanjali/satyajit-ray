@@ -1,0 +1,50 @@
+.banner-image{
+    /* background-image:url('/images/Path478.png'); */
+    height:300px;
+    position: relative;
+}
+.banner-image__bg{
+    position: absolute;
+    right:0px;
+    top:-67px;
+    width:700px;
+    z-index: 0;
+}
+.banner-image .main-photo{
+    position: absolute;
+    z-index: 1;
+    right:0px;
+}
+.camera-photo{
+    position: absolute;
+    z-index: 2;
+    right: 294px;
+    top:112px;
+
+}
+.banner-part{
+    display: flex;
+}
+.banner-part p{
+    font-family: 'Prata', serif;
+    font-size: 27px;
+}
+.banner-part h1{
+    font-family: 'Playfair Display', serif;
+    width:324px;
+    font-size: 90px;
+}
+.banner-part .shri{
+    font-size: 30px;
+}
+.banner-part .time-period{
+    font-family: 'Playfair Display', serif;
+    width:210px;
+    text-align: center;
+}
+.banner-part .designation{
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    width:115px;
+    display: inline-block;
+}
