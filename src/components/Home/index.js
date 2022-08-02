@@ -1,5 +1,6 @@
 import React from 'react'
 import About from '../About'
+import Biblography from '../Biblography'
 import './index.css'
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
             </div>
         </div>
         <About/>
+        <Biblography/>
     </div>
   )
 }
