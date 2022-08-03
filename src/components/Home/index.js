@@ -1,6 +1,9 @@
 import React from 'react'
 import About from '../About'
+import Awards from '../Awards'
 import Biblography from '../Biblography'
+import Films from '../Films'
+import Footer from '../Footer'
 import './index.css'
 
 export default function Home() {
@@ -25,7 +28,10 @@ export default function Home() {
             </div>
         </div>
         <About/>
+        {/* <Awards/> */}
         <Biblography/>
+        <Films/>
+        <Footer/>
     </div>
   )
 }

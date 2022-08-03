@@ -59,7 +59,7 @@ export default function About() {
     }
     const {years,titles,descriptions} = state;
   return (
-    <div className='container pt-5'>
+    <div className='container pb-5'>
         <div className='row'>
             <div className='col-6'>
                 <h1 className='about-head'>{titles}</h1>

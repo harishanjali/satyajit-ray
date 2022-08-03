@@ -24,6 +24,7 @@
 }
 .banner-part{
     display: flex;
+    margin-bottom:100px;
 }
 .banner-part p{
     font-family: 'Prata', serif;

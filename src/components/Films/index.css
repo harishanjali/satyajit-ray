@@ -1,0 +1,23 @@
+.films-container{
+    margin-top: 80px;
+    background-color: rgb(237, 231, 231);
+}
+
+.films-container .special{
+    font-family: 'Lato', 'sans-serif';
+    font-weight: bold;
+    color:#F58923;
+    height:30px;
+    width:350px;
+    padding:5px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.films-part{
+    position: relative;
+}
+.camera-img{
+    position: absolute;
+    right:-80px;
+    top:40px;
+}
