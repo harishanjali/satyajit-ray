@@ -1,3 +1,12 @@
+.logo-part{
+    height:30px;
+    width:30px;
+    border:1px dotted black;
+    border-right:2px dotted black;
+    border-radius: 50%;
+    margin:20px 0px 0px 60px;
+    text-align: center;
+}
 .banner-image{
     /* background-image:url('/images/Path478.png'); */
     height:300px;
@@ -29,6 +38,9 @@
 .banner-part p{
     font-family: 'Prata', serif;
     font-size: 27px;
+}
+.title{
+    margin-top:80px;
 }
 .banner-part h1{
     font-family: 'Playfair Display', serif;

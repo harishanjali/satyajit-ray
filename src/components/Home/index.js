@@ -10,10 +10,11 @@ export default function Home() {
   return (
     <div>
         <div className='banner-part'>
+        <div className='logo-part'>SR</div>
             <div className='container pt-5'>
                 <div className='row'>
                     <div className='col-5'>
-                        <p className='border-start ps-3 border-3'>The director is the only person
+                        <p className='border-start ps-3 border-3 title'>The director is the only person
                          who knows what the film is about.
                         </p>
                         <h1><span className='shri'>Shri </span>Satyajit Ray <span className='designation'>Indian film Director</span></h1>

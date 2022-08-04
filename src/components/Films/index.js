@@ -1,4 +1,6 @@
 import React,{useState} from 'react'
+import { RibbonContainer,  RightCornerRibbon,LeftCornerRibbon} from "react-ribbons";
+
 import './index.css';
 
 const films = [
@@ -7,72 +9,133 @@ const films = [
         image:'images/Image11.png',
         title:'AGNATUK',
         year:1991,
-        language:'hindi'
+        language:'Hindi'
     },
     {
         id:2,
         image:'images/95db9f3915a51df9c7f6c5bb3e39b9a5.png',
         title:'Charulatha',
         year:1991,
-        language:'hindi'
+        language:'Hindi'
     },
     {
         id:3,
         image:'images/91b985f892c090824db8311df1a35323.png',
         title:'GHARE-BHAIRE',
         year:1984,
-        language:'hindi'
+        language:'Hindi'
     },
     {
         id:4,
         image:'images/9542fd0ad701d9786b8d388e5d8e5763.png',
         title:'PATHER-PANCHALI',
         year:1955,
-        language:'hindi'
+        language:'Hindi'
+    },
+    {
+        id:5,
+        image:'images/9542fd0ad701d9786b8d388e5d8e5763.png',
+        title:'PATHER-PANCHALI',
+        year:1956,
+        language:'Tamil'
+    },
+    {
+        id:6,
+        image:'images/91b985f892c090824db8311df1a35323.png',
+        title:'GHARE-BHAIRE',
+        year:1984,
+        language:'Tamil'
+    },
+    {
+        id:7,
+        image:'images/95db9f3915a51df9c7f6c5bb3e39b9a5.png',
+        title:'Charulatha',
+        year:1991,
+        language:'Tamil'
+    },
+    {
+        id:8,
+        image:'images/Image11.png',
+        title:'AGNATUK',
+        year:1991,
+        language:'Tamil'
+    },
+    {
+        id:9,
+        image:'images/95db9f3915a51df9c7f6c5bb3e39b9a5.png',
+        title:'Charulatha',
+        year:1991,
+        language:'Hindi'
     },
 ]
 
 export default function Films() {
-    const [state,setState] = useState({initialFilms:films});
+    const [state,setState] = useState({initialFilms:films.slice(0,4)});
     const {initialFilms} = state;
+
+    const onChangeValue = (event)=>{
+        let filteredData = films.filter(each=>{
+            if(event.target.value!=='all'){
+                if(each.language===event.target.value){
+                    return each;
+                }
+            }
+            else{
+                return each;
+            }
+        });
+        setState({...state,initialFilms:filteredData});
+    }
   return (
     <div className='films-container d-flex'>
         <div className='container pt-5 pb-5'>
             <div className='row'>
                 <div className='col-9'>
-                    <div className='d-flex justify-content-between mb-4'>
+                    <div className='d-flex justify-content-between mb-4 align-items-start'>
                         <h1>Films</h1>
-                        <div className='d-flex'>
-                            <p class='special me-3'>National Film Awarded</p>
-                            <select name='language' className='form-select'>
-                                <option selected>
+                        <div className='d-flex position-relative'>
+                            <p class='special me-3 text-center'>National Film Awarded</p>
+                            <select name='language' onChange={onChangeValue}>
+                                <option selected disabled>
                                 Language
                                 </option>
-                                <option value='hindi'>
+                                <option value='Hindi'>
                                 Hindi
                                 </option>
-                                <option value='tamil'>
+                                <option value='Tamil'>
                                 Tamil
                                 </option>
+                                <option value='all'>
+                                All
+                                </option>
                             </select>
+                            <div className='custom-select-arrow'>▼</div>
                         </div>
                         
                     </div>
                 </div>
                 <div className='col-9'>
-                    <div className='films d-flex justify-content-between'>
+                    <div className='films d-flex justify-content-between flex-wrap'>
                         {initialFilms.map(each=>(
+                            <RibbonContainer className="custom-class" key={each.id}>
+                            <LeftCornerRibbon backgroundColor="#0088ff" color="#f0f0f0" fontFamily="Arial">
+                                {each.language}
+                            </LeftCornerRibbon>
+                            <a href='https://www.google.com' target='_blank'>
                             <div>
                                 <img src={each.image} alt='film-img'/>
                                 <p>{each.title}</p>
                                 <p>{each.year}</p>
                             </div>
+                            </a>
+                            
+                            </RibbonContainer>
                         ))}
                     </div>
                 </div>
                 <div className='col-12'>
                     <div className='d-flex justify-content-center align-items-center'>
-                        <button>VIEW ALL</button>
+                        <button className='view-all-btn'>VIEW ALL</button>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,14 @@
     padding-bottom: 50px;
     color:#fff;
 }
-.icons-container{
+.icons-container i{
     color: #fff;
     font-size: 24px;
+}
+
+i{
+    transition: 1s all;
+}
+a:hover i{
+    transform:rotate(360deg);
 }

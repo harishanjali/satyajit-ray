@@ -1,8 +1,12 @@
 ul{
     list-style-type:circle;
+    margin-top:30px;
+}
+ul li{
+    width:298px;
 }
 .awards-container p{
-    font-size:23px;
+    font-size:33px;
 }
 span{
     font-size:80px;
@@ -11,4 +15,15 @@ span{
     margin-top: 80px;
     margin-bottom:80px;
 }
- 
+.awards{
+    /* margin-left:15%; */
+    background-color:#540D10 ;
+    color:#fff;
+    padding-left:15%;
+    padding-top:20px;
+    height:664px;
+    /* width:460px; */
+}
+.awards-description{
+    margin-right:150px;
+}
