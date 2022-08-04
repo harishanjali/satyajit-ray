@@ -78,7 +78,7 @@ export default function About() {
     const {years,titles,descriptions} = state;
   return (
     <div className='position-relative'>
-        <div className='dotted-line'></div>
+        {/* <div className='dotted-line'></div> */}
          <div className='container pb-5'>
             <div className='row'>
                 <div className='col-6'>
@@ -93,16 +93,21 @@ export default function About() {
                     <div className='d-flex justify-content-between mt-5'>
                     {aboutData.map(each=>(
                         <div className='d-flex flex-column justify-content-center align-items-center'>
-                            {each.isActive?<img onClick={()=>showData(each.id)} id={each.id} className='about-img img-active mb-4' src={each.image} alt='about-img'/>:<img onClick={()=>showData(each.id)} id={each.id} className='about-img mb-4' src={each.image} alt='about-img'/>}
-                            
-                            {each.isActive?<div className='circle active'></div>:<div className='circle'></div>}
-                            
+                            {each.isActive?<img onClick={()=>showData(each.id)} id={each.id} className='about-img img-active mb-4' src={each.image} alt='about-img'/>:<img onClick={()=>showData(each.id)} id={each.id} className='about-img mb-4' src={each.image} alt='about-img'/>} 
                         </div>
                         
                     ))}
                     </div>
                 </div>
             </div>
+        </div>
+        <div className='d-flex justify-content-evenly'>
+        {aboutData.map(each=>(
+            <div className='each-dot'>
+                {each.isActive?<div className='circle active'></div>:<div className='circle'></div>}
+            </div>
+                
+        ))}
         </div>
         
     </div>

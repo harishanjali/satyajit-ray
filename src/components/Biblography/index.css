@@ -38,22 +38,28 @@ a:hover .carousel-card-img{
     left:88% !important;
     height:40px;
     width:40px;
-    border: 2px solid grey;
-    border-radius: 50%;
+    /* border: 2px solid grey;
+    border-radius: 50%; */
+    background-image: url('C:/Users/user/Documents/hariomPrj/satyajit/public/images/next-slider.png');
+    background-size: cover;
+  }
+  .slick-prev:hover{
+    opacity: 1 !important;
   }
 .slick-next{
   top:-70px !important;
   right:40px !important;
   height:40px;
   width:40px;
-  border: 2px solid grey;
-  border-radius: 50%;
+  /* border: 2px solid grey;
+  border-radius: 50%; */
 }
 .slick-prev::before{
   color:grey; 
   font-size:30px;
   /* border:2px solid red; */
   /* border-radius: 50%; */
+  content:none;
   
 }
 .slick-next::before{
@@ -61,4 +67,20 @@ a:hover .carousel-card-img{
   font-size:30px;
   right:10px;
   bottom:5px;
+  content:none;
+}
+.slick-prev{
+  top:-70px !important;
+  left:88% !important;
+  height:40px;
+  width:40px;
+  /* border-radius: 50%;
+  border: 1px solid #000; */
+  background: url('C:/Users/user/Documents/hariomPrj/satyajit/public/images/next-slider.png') no-repeat center center;
+  background-size: 30px;
+}
+.slick-prev:hover{
+  background: url('C:/Users/user/Documents/hariomPrj/satyajit/public/images/next-slider.png') no-repeat center center !important;
+
+  background-size: 30px;
 }
