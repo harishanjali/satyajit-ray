@@ -89,27 +89,18 @@ export default function About() {
                     <p className='about-description'>{descriptions}
                     </p>
                 </div>
-                <div className='col-12 mt-5'>
-                    <div className='d-flex justify-content-between mt-5'>
-                    {aboutData.map(each=>(
-                        <div className='d-flex flex-column justify-content-center align-items-center'>
-                            {each.isActive?<img onClick={()=>showData(each.id)} id={each.id} className='about-img img-active mb-4' src={each.image} alt='about-img'/>:<img onClick={()=>showData(each.id)} id={each.id} className='about-img mb-4' src={each.image} alt='about-img'/>} 
-                        </div>
-                        
-                    ))}
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className='d-flex justify-content-evenly'>
-        {aboutData.map(each=>(
-            <div className='each-dot'>
-                {each.isActive?<div className='circle active'></div>:<div className='circle'></div>}
-            </div>
                 
-        ))}
+            </div>
         </div>
-        
+        <div className='dashed-line'>
+                    <ul className='about-items d-flex justify-content-between mt-5 container'>
+                    {aboutData.map(each=>(
+                        <li onClick={()=>showData(each.id)} key={`about${each.id}`} className={each.isActive?'active-about-item about-item d-flex flex-column justify-content-center align-items-center':'about-item d-flex flex-column justify-content-center align-items-center'}>
+                            {each.isActive?<img className='about-img-active' src={each.image} alt='about-img'/>:<img src={each.image} alt='about-img'/>}
+                        </li>
+                    ))}
+                    </ul>
+                </div>
     </div>
    
   )

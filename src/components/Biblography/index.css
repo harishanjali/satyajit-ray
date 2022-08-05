@@ -77,11 +77,11 @@ a:hover .carousel-card-img{
   width:40px;
   /* border-radius: 50%;
   border: 1px solid #000; */
-  background: url('C:/Users/user/Documents/hariomPrj/satyajit/public/images/next-slider.png') no-repeat center center;
+  background: url('../../assets/images/icon/next-slider.png') no-repeat center center;
   background-size:cover;
 }
 .slick-next:hover,.slick-next:focus{
-  background: url('C:/Users/user/Documents/hariomPrj/satyajit/public/images/next-slider.png');
+  background: url('../../assets/images/icon/next-slider.png');
   height:40px;
   width:40px;
   background-size:cover;
@@ -93,11 +93,11 @@ a:hover .carousel-card-img{
   width:40px;
   /* border-radius: 50%;
   border: 1px solid #000; */
-  background: url('C:/Users/user/Documents/hariomPrj/satyajit/public/images/prev-slider.png') no-repeat center center;
+  background: url('../../assets/images/icon/prev-slider.png') no-repeat center center;
   background-size:cover;
 }
 .slick-prev:hover,.slick-prev:focus{
-  background: url('C:/Users/user/Documents/hariomPrj/satyajit/public/images/prev-slider.png');
+  background: url('../../assets/images/icon/prev-slider.png');
   height:40px;
   width:40px;
   background-size:cover;

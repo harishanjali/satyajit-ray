@@ -2,6 +2,7 @@ import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import leftArrow from '../../assets/images/icon/next-slider.png';//we can import image
 import './index.css'
 
 export default function Biblography() {
@@ -65,12 +66,8 @@ export default function Biblography() {
                         </div>
                     </div>
                     </a>
-                    
-                    
-                    
                 </Slider>
             </div>
-            
         </div>
     </div>
   )
