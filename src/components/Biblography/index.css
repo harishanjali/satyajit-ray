@@ -1,6 +1,9 @@
 a{
   text-decoration: none;
-  color:black;
+  color:#1A1915;
+}
+a:hover{
+  color:#1A1915;
 }
 .card-arrow{
   display: none;
@@ -17,14 +20,14 @@ a{
   left:150px;
   /* left:100px; */
   z-index: 1;
-  transition:1s all;
+  transition:.4s all;
 }
 .carousel-card-img{
   transition:.4s all;
 }
 a:hover .card-arrow{
   display: block;
-  transform: translateY(-25px);
+  transform: translateY(-45px);
 }
 a:hover .carousel-card-img{
   transform: translateY(-25px);

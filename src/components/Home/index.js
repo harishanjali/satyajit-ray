@@ -8,7 +8,7 @@ import './index.css'
 
 export default function Home() {
   return (
-    <div>
+    <div className='position-relative'>
         <div className='banner-part'>
         <div className='logo-part'>SR</div>
             <div className='container pt-5'>
@@ -23,9 +23,9 @@ export default function Home() {
                 </div>
             </div>
             <div className='banner-image'>
-                <img className='banner-image__bg' src='images/Path478.png' alt='bg'/>
-                <img className='main-photo' src='images/MaskGroup1.png' alt='bg'/>
-                <img className='camera-photo' src='images/Image10.png' alt='bg'/>
+                <img className='banner-image__bg' src='images/path478.png' alt='bg-banner'/>
+                <img className='main-photo' src='images/MaskGroup1.png' alt='bg-main'/>
+                <img className='camera-photo' src='images/Image10.png' alt='bg-camera'/>
             </div>
         </div>
         <About/>

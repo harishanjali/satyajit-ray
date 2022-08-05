@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import { RibbonContainer,  RightCornerRibbon,LeftCornerRibbon} from "react-ribbons";
 
 import './index.css';
@@ -72,7 +72,6 @@ const films = [
 export default function Films() {
     const [state,setState] = useState({initialFilms:films.slice(0,4)});
     const {initialFilms} = state;
-
     const onChangeValue = (event)=>{
         let filteredData = films.filter(each=>{
             if(event.target.value!=='all'){
@@ -109,7 +108,7 @@ export default function Films() {
                                 All
                                 </option>
                             </select>
-                            <div className='custom-select-arrow'>▼</div>
+                            <div className='custom-select-arrow'></div>
                         </div>
                         
                     </div>
@@ -117,19 +116,14 @@ export default function Films() {
                 <div className='col-9'>
                     <div className='films d-flex justify-content-between flex-wrap'>
                         {initialFilms.map(each=>(
-                            <RibbonContainer className="custom-class" key={each.id}>
-                            <LeftCornerRibbon backgroundColor="#0088ff" color="#f0f0f0" fontFamily="Arial">
-                                {each.language}
-                            </LeftCornerRibbon>
                             <a href='https://www.google.com' target='_blank'>
-                            <div>
+                            <div className='position-relative film-card'>
+                                <span data-content={each.language}></span>
                                 <img src={each.image} alt='film-img'/>
-                                <p>{each.title}</p>
-                                <p>{each.year}</p>
+                                <p className='films-title mt-3'>{each.title}</p>
+                                <p className='year'>{each.year}</p>
                             </div>
                             </a>
-                            
-                            </RibbonContainer>
                         ))}
                     </div>
                 </div>

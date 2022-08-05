@@ -22,7 +22,7 @@ export default function Biblography() {
                     <a href='https://www.google.com' target='_blank'>
                     <div className='position-relative'>
                         <img className='carousel-card-img' src='images/8b47b32afcf31cfad265443098361207.png' alt='biblo-img'/>
-                        <p>A Vision of cinema</p>
+                        <p className='mt-3'>A Vision of cinema</p>
                         <div className='card-arrow'>
                             →
                         </div>
@@ -31,7 +31,7 @@ export default function Biblography() {
                     <a href='https://www.google.com' target='_blank'>
                     <div className='position-relative'>
                         <img className='carousel-card-img' src='images/1248579655e4fa04aff2a23f597edeae.png' alt='biblo-img'/>
-                        <p>The complete adventure of Feluda</p>
+                        <p className='mt-3'>The complete adventure of Feluda</p>
                         <div className='card-arrow'>
                             →
                         </div>
@@ -40,7 +40,7 @@ export default function Biblography() {
                     <a href='https://www.google.com' target='_blank'>
                     <div className='position-relative'>
                         <img className='carousel-card-img' src='images/23acfb3eaf382e82747553dec5ccf7f4.png' alt='biblo-img'/>
-                        <p>The apu triology</p>
+                        <p className='mt-3'>The apu triology</p>
                         <div className='card-arrow'>
                             →
                         </div>
@@ -49,7 +49,7 @@ export default function Biblography() {
                     <a href='https://www.google.com' target='_blank'>
                     <div className='position-relative'>
                         <img className='carousel-card-img' src='images/47d5623e4b9f5ec8bed538615979a1e0.png' alt='biblo-img'/>
-                        <p>My Years with Apu
+                        <p className='mt-3'>My Years with Apu
                         A memoir</p>
                         <div className='card-arrow'>
                             →
@@ -59,7 +59,7 @@ export default function Biblography() {
                     <a href='https://www.google.com' target='_blank'>
                     <div className='position-relative'>
                         <img className='carousel-card-img' src='images/8a35303eef4f26869934f47ad1130176.png' alt='biblo-img'/>
-                        <p>Our films their Films</p>
+                        <p className='mt-3'>Our films their Films</p>
                         <div className='card-arrow'>
                             →
                         </div>
