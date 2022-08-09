@@ -79,12 +79,12 @@ export default function About() {
   return (
     <div className='position-relative'>
         {/* <div className='dotted-line'></div> */}
-         <div className='container pb-5'>
+         <div className='container pb-md-5 about-content'>
             <div className='row'>
-                <div className='col-6'>
+                <div className='col-12 col-md-6'>
                     <h1 className='about-head text'>{titles}</h1>
                 </div>
-                <div className='col-6 border-start'>
+                <div className='col-12 col-md-6 border-start'>
                     <h1>{years}</h1>
                     <p className='about-description'>{descriptions}
                     </p>
@@ -93,14 +93,14 @@ export default function About() {
             </div>
         </div>
         <div className='dashed-line'>
-                    <ul className='about-items d-flex justify-content-between mt-5 container'>
+                    <ul className='about-items d-flex justify-content-md-between mt-md-5 container'>
                     {aboutData.map(each=>(
                         <li onClick={()=>showData(each.id)} key={`about${each.id}`} className={each.isActive?'active-about-item about-item d-flex flex-column justify-content-center align-items-center':'about-item d-flex flex-column justify-content-center align-items-center'}>
                             {each.isActive?<img className='about-img-active' src={each.image} alt='about-img'/>:<img src={each.image} alt='about-img'/>}
                         </li>
                     ))}
                     </ul>
-                </div>
+        </div>
     </div>
    
   )

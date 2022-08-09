@@ -13,7 +13,7 @@ export default function Home() {
         <div className='logo-part'>SR</div>
             <div className='container pt-5'>
                 <div className='row'>
-                    <div className='col-5'>
+                    <div className='col-12 col-md-5'>
                         <p className='border-start ps-3 border-3 title'>The director is the only person
                          who knows what the film is about.
                         </p>

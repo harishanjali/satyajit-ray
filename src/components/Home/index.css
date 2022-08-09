@@ -5,7 +5,7 @@
     border-radius: 50%;
     /* margin:20px 0px 0px 60px; */
     text-align: center;
-    position: absolute;
+    position:relative;
     font-size: 25px;
     left:5%;
     top:50px;
@@ -34,7 +34,7 @@
 }
 .banner-image{
     /* background-image:url('/images/Path478.png'); */
-    height:300px;
+    /* height:300px; */
     position: relative;
 }
 .banner-image__bg{
@@ -85,4 +85,58 @@
     font-family: 'Lato', sans-serif;
     width:115px;
     display: inline-block;
+}
+
+@media only screen and (min-width:320px) and (max-width:576px){
+    .logo-part{
+        font-size: 12px;
+        height:32px;
+        width:32px;
+        border-radius:unset;
+        border-radius:50%;
+        padding:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-part::after{
+        top:1px;
+        left:21px;
+    }
+    .logo-part::before{
+        top:14px;
+        left:28px;
+    }
+    .banner-part p{
+        font-size: 12px;
+    }
+    .banner-image{
+        background-color: brown;
+        /* display: none; */
+    }
+    .banner-image__bg{
+        display: none;
+    }
+    .banner-image .main-photo{
+        height:200px;
+        width:200px;
+        top:294px;
+        transform: translateX(-26%);
+    }
+    .camera-photo{
+        height:200px;
+        width:200px;
+        top:308px;
+        transform: translateX(80%);
+    }
+    .banner-part h1{
+        font-size:24px;
+        width:unset;
+    }
+    .banner-part .shri{
+        font-size:12px;
+    }
+    .banner-part .designation{
+        font-size: 12px;
+    }
 }
