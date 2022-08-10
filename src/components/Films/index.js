@@ -94,6 +94,7 @@ export default function Films() {
                         <h1>Films</h1>
                         <div className='d-flex position-relative'>
                             <p class='special me-3 text-center'>National Film Awarded</p>
+                            <div className='select-wrapper'>
                             <select name='language' onChange={onChangeValue}>
                                 <option selected disabled>
                                 Language
@@ -108,7 +109,9 @@ export default function Films() {
                                 All
                                 </option>
                             </select>
-                            <div className='custom-select-arrow'></div>
+                            </div>
+                            
+                            {/* <div className='custom-select-arrow'></div> */}
                         </div>
                         
                     </div>

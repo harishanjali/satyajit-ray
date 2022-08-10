@@ -9,7 +9,7 @@ export default function Awards() {
               <div className='col-12 col-md-4'>
                 <div className='awards'>
                         <img src='images/Group474.png' alt='awards-img'/>
-                        <span>21 Awards</span>
+                        <p>21 Awards</p>
                         <ul>
                           <li>Honorary awards</li>
                           <li>National film Awards</li>

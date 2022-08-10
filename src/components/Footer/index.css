@@ -10,9 +10,9 @@
     font-size: 24px;
 }
 
-i{
-    transition: 1s all;
+.footer-icon{
+    transition:.4s all;
 }
-a:hover i{
-    transform:rotate(360deg);
+a:hover{
+    transform:translateY(-10px);
 }
