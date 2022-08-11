@@ -13,6 +13,6 @@
 .footer-icon{
     transition:.4s all;
 }
-a:hover{
+.footer-icon:hover{
     transform:translateY(-10px);
 }
