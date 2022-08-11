@@ -4,6 +4,7 @@
 .films-container{
     margin-top: 80px;
     background-color: rgb(237, 231, 231);
+    height:553px;
 }
 .film-card{
     position:relative;
@@ -95,6 +96,8 @@ select{
     width:130px;
     height:36px;
     border:1px solid grey;
+    background-color: transparent;
+    transition:.4s all;
 }
 .view-all-btn:hover{
     background-color: brown;
@@ -105,4 +108,22 @@ select{
     font-family: 'Lato', 'sans-serif';
     font-weight: bold;
     margin-bottom:0;
+}
+
+@media only screen and (min-width:320px) and (max-width:576px){
+    .camera-img{
+        display: none;
+    }
+    .films{
+        overflow-x: scroll;
+    }
+    .film-card{
+        margin-right:15px;
+    }
+    .films-container{
+        margin-right:0 !important;
+    }
+    .films-container .special{
+        display: none;
+    }
 }

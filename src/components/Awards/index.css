@@ -1,9 +1,9 @@
-ul{
+.awards ul{
     list-style-type:circle;
     /* margin-top:100px; */
     margin-left: 0;
 }
-ul li{
+.awards ul li{
     width:298px;
     font-size: 21px;
     margin-left:-10px;
@@ -17,9 +17,6 @@ ul li{
 }
 #awardsQuote{
     quotes:"“";
-}
-.awards span{
-    font-size: 30px;
 }
 .awards-description span{
     font-size:80px;
@@ -42,3 +39,27 @@ ul li{
     font-family: 'Lato','sans-serif';
     font-weight: lighter;
 }
+
+@media only screen and (min-width:320px) and (max-width:576px){
+    .awards{
+        height:auto;
+        padding-bottom:30px;
+    }
+    .awards img{
+        height:150px;
+        width:150px;
+    }
+    .awards p{
+        font-size:15px;
+    }
+    .awards ul li{
+        font-size: 12px;
+    }
+    .awards-description p {
+        font-size: 15px;
+    }
+    .awards-container{
+        margin-bottom: 20px;
+    }
+}
+

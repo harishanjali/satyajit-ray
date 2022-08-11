@@ -87,10 +87,10 @@ export default function Films() {
     }
   return (
     <div className='films-container d-flex'>
-        <div className='container pt-5 pb-5'>
+        <div className='container pt-5 pb-5 film__content'>
             <div className='row'>
-                <div className='col-9'>
-                    <div className='d-flex justify-content-between mb-4 align-items-start'>
+                <div className='col-12 col-md-9'>
+                    <div className='d-flex flex-column flex-md-row justify-content-md-between mb-4 align-items-start'>
                         <h1>Films</h1>
                         <div className='d-flex position-relative'>
                             <p class='special me-3 text-center'>National Film Awarded</p>
@@ -116,8 +116,8 @@ export default function Films() {
                         
                     </div>
                 </div>
-                <div className='col-9'>
-                    <div className='films d-flex justify-content-between flex-wrap'>
+                <div className='col-12 col-md-9'>
+                    <div className='films d-flex justify-content-between flex-md-wrap'>
                         {initialFilms.map(each=>(
                             <a href='https://www.google.com' target='_blank'>
                             <div className='position-relative film-card'>
@@ -137,6 +137,7 @@ export default function Films() {
                 </div>
             </div>
         </div>
+        
         <div className='films-part'>
             <img className='camera-img' src='images/Image10.png' alt='bg'/>
         </div>

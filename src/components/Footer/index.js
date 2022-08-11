@@ -6,10 +6,10 @@ export default function Footer() {
     <div className='footer'>
         <div className='container'>
             <div className='row'>
-                <div className='col-9'>
+                <div className='col-12 col-md-9'>
                 ©2021 Satyajit ray All rights reserved
                 </div>
-                <div className='col-3 icons-container d-flex justify-content-between'>
+                <div className='mt-3 mt-md-0 col-12 col-md-3 icons-container d-flex justify-content-between flex-wrap'>
                 <a className='footer-icon' href='https://www.facebook.com' target='_blank'>
                 <i class="bi bi-facebook"></i>
                 </a>

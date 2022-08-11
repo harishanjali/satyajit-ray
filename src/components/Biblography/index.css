@@ -72,3 +72,19 @@ a:hover .carousel-card-img{
   background: url('../../assets/images/icon/prev-slider.png');
   background-size:cover;
 }
+
+@media only screen and (min-width:320px) and (max-width:576px){
+  .slick-prev{
+    /* top:70px !important; */
+    right:180px !important;
+    top:unset !important;
+    bottom:-40px !important;
+  }
+  .slick-next{
+    /* top:70px !important; */
+    right:140px !important;
+    top:unset !important;
+    bottom:-40px !important;
+  }
+
+}
