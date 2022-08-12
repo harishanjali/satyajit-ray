@@ -4,7 +4,7 @@
 .films-container{
     margin-top: 80px;
     background-color: rgb(237, 231, 231);
-    height:553px;
+    min-height:553px;
 }
 .film-card{
     position:relative;
