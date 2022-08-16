@@ -40,8 +40,6 @@ export default function Biblography() {
         slidesToShow:4,
         slidesToScroll: 1,
         arrows:true,
-        centerMode: true,
-        centerPadding:'70px',
         responsive: [
             {
               breakpoint: 1024,
@@ -49,21 +47,34 @@ export default function Biblography() {
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
+                centerMode: true,
+                centerPadding:'70px',
                 dots: true
               }
             },
             {
-              breakpoint: 576,
+              breakpoint:1600,
+              settings:{
+                slidesToShow:4,
+                slidesToScroll:1,
+                centerMode:true,
+                centerPadding:'70px'
+              }
+            },
+            {
+              breakpoint:768,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
               }
             },
             {
-              breakpoint: 320,
+              breakpoint:480,
               settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToShow: 1.5,
+                slidesToScroll: 1,
+                centerMode:false,
+                centerPadding:'0px'
               }
             }
             // You can unslick at a given breakpoint now by adding:

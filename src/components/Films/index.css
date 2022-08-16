@@ -110,12 +110,9 @@ select{
     margin-bottom:0;
 }
 
-@media only screen and (min-width:320px) and (max-width:576px){
+@media only screen and (min-width:320px) and (max-width:768px){
     .camera-img{
         display: none;
-    }
-    .films{
-        overflow-x: scroll;
     }
     .film-card{
         margin-right:15px;
@@ -124,6 +121,11 @@ select{
         margin-right:0 !important;
     }
     .films-container .special{
+        display: none;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1200px){
+    .camera-img{
         display: none;
     }
 }

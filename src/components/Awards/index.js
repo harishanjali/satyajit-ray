@@ -6,7 +6,7 @@ export default function Awards() {
     <div className='awards-container'>
         <div className='container-fluid'>
             <div className='row justify-content-between'>
-              <div className='col-12 col-md-4'>
+              <div className='col-12 col-lg-4'>
                 <div className='awards'>
                         <img src='images/Group474.png' alt='awards-img'/>
                         <p>21 Awards</p>

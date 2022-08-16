@@ -96,7 +96,7 @@ export default function Films() {
                             <p class='special me-3 text-center'>National Film Awarded</p>
                             <div className='select-wrapper'>
                             <select name='language' onChange={onChangeValue}>
-                                <option selected disabled>
+                                <option disabled>
                                 Language
                                 </option>
                                 <option value='Hindi'>
@@ -117,9 +117,9 @@ export default function Films() {
                     </div>
                 </div>
                 <div className='col-12 col-md-9'>
-                    <div className='films d-flex justify-content-between flex-md-wrap'>
+                    <div className='films d-flex justify-content-between flex-wrap'>
                         {initialFilms.map(each=>(
-                            <a href='https://www.google.com' target='_blank'>
+                            <a href='https://www.google.com' target='_blank' key={each.id}>
                             <div className='position-relative film-card'>
                                 <span data-content={each.language}></span>
                                 <img src={each.image} alt='film-img'/>

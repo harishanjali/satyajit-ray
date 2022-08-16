@@ -107,15 +107,17 @@ a:hover .carousel-card-title{
 @media only screen and (min-width:320px) and (max-width:576px){
   .slick-prev{
     /* top:70px !important; */
-    right:180px !important;
+    right:50% !important;
+    left:30% !important;
     top:unset !important;
-    bottom:-40px !important;
+    bottom:-80px !important;
   }
   .slick-next{
     /* top:70px !important; */
-    right:140px !important;
+    right:50% !important;
     top:unset !important;
-    bottom:-40px !important;
+    bottom:-80px !important;
+    left:50% !important;
   }
 
 }

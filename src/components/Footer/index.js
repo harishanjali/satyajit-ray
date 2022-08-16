@@ -11,19 +11,19 @@ export default function Footer() {
                 </div>
                 <div className='mt-3 mt-md-0 col-12 col-md-3 icons-container d-flex justify-content-between flex-wrap'>
                 <a className='footer-icon' href='https://www.facebook.com' target='_blank'>
-                <i class="bi bi-facebook"></i>
+                <i className="bi bi-facebook"></i>
                 </a>
                 <a className='footer-icon' href='https://www.facebook.com' target='_blank'>
-                <i class="bi bi-instagram"></i>
+                <i className="bi bi-instagram"></i>
                 </a>
                 <a className='footer-icon' href='https://www.facebook.com' target='_blank'>
-                <i class="bi bi-twitter"></i>
+                <i className="bi bi-twitter"></i>
                 </a>
                 <a className='footer-icon' href='https://www.facebook.com' target='_blank'>
-                <i class="bi bi-linkedin"></i>
+                <i className="bi bi-linkedin"></i>
                 </a>
                 <a className='footer-icon' href='https://www.facebook.com' target='_blank'>
-                <i class="bi bi-youtube"></i>
+                <i className="bi bi-youtube"></i>
                 </a>
                 </div>
             </div>

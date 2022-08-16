@@ -33,8 +33,6 @@
     border-radius: 50%;
 }
 .banner-image{
-    /* background-image:url('/images/Path478.png'); */
-    /* height:300px; */
     position: relative;
 }
 .banner-image__bg{
@@ -87,7 +85,7 @@
     display: inline-block;
 }
 
-@media only screen and (min-width:320px) and (max-width:576px){
+@media only screen and (min-width:320px) and (max-width:768px){
     .logo-part{
         font-size: 12px;
         height:32px;
@@ -101,42 +99,100 @@
     }
     .logo-part::after{
         top:1px;
-        left:21px;
+        height:5px;
+        width:5px;
+        left:23px;
     }
     .logo-part::before{
-        top:14px;
-        left:28px;
+        top:11px;
+        height:2.5px;
+        width:2.5px;
+        left:29px;
+    }
+    .banner-part{
+        flex-direction: column;
+        padding-bottom: 15px;
     }
     .banner-part p{
-        font-size: 12px;
+        font-size: 20px;
     }
     .banner-image{
         background-color: brown;
+        height:auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:10px;
         /* display: none; */
     }
     .banner-image__bg{
         display: none;
     }
     .banner-image .main-photo{
-        height:200px;
-        width:200px;
-        top:294px;
-        transform: translateX(-26%);
+        height:150px;
+        width:150px;
+        position: unset;
+        top: unset;
+        transform:unset;
     }
     .camera-photo{
-        height:200px;
-        width:200px;
-        top:308px;
-        transform: translateX(80%);
+        display: none;
     }
     .banner-part h1{
-        font-size:24px;
+        font-size:53px;
         width:unset;
     }
     .banner-part .shri{
-        font-size:12px;
+        font-size:20px;
     }
     .banner-part .designation{
-        font-size: 12px;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width:577px) and (max-width:768px){
+    .camera-ipad-view{
+        display: block !important;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:992px){
+    .banner-image .banner-image__bg{
+        display: none;
+    }
+    .banner-image .main-photo{
+        height:300px;
+        width:300px;
+        top:152px;
+        right:0;
+        left:unset;
+    }
+    .banner-image .camera-photo{
+        height:300px;
+        width:300px;
+        top:182px;
+        right:132px;
+        left:unset;
+    }
+    .banner-part{
+        flex-direction: row;
+    }
+    .banner-image{
+        background-color: brown;
+        height:300px;
+    }
+}
+@media only screen and (min-width:993px) and (max-width:1200px) {
+    .banner-image .banner-image__bg{
+        width:600px;
+        height:650px;
+    }
+    .banner-image .main-photo{
+        height:300px;
+    }
+    .banner-image .camera-photo{
+        height:400px;
+        left: unset;
+        right:140px;
+        top:65px
     }
 }

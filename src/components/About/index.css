@@ -58,12 +58,12 @@ h1{
     -webkit-box-orient: vertical;
  }
 
- @media only screen and (min-width:320px) and (max-width:576px){
+ @media only screen and (min-width:320px) and (max-width:768px){
     .about-head{
         font-size: 15px;
     }
     .about-content{
-        margin-top:255px;
+        margin-top:5px;
     }
     .about-item img{
         height:60px;
@@ -73,7 +73,7 @@ h1{
         transform: scale(1.2);
     }
     .about-items{
-        height:120px;
+        height:140px;
         overflow-x: scroll;
         margin-top: 30px;
         /* border-bottom:1px dashed black; */
@@ -92,6 +92,21 @@ h1{
     .about-item::after{
         top:100px;
         z-index: 2;
+    }
+ }
+
+ @media only screen and (min-width:769px) and (max-width:992px){
+    .about-items{
+        height:auto;
+        /* overflow-y: hidden; */
+    }
+    .about-item img{
+        height:80px;
+        width:80px;
+        margin-top:15px;
+    }
+    .dashed-line{
+        padding-bottom: 54px;
     }
  }
 
